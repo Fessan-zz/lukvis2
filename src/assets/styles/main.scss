@@ -1,11 +1,13 @@
 //                        main ///
 // hero
-.main {
+.main_wrap{
   background-image: url('../img/hero-bck.jpg');
   background-size: cover;
   background-position:  top center;
   background-repeat: no-repeat;
   color: #fff;
+}
+.main {
   &__hero{
     & h1{
       padding-top: 140px;
@@ -67,6 +69,48 @@
           transition: 0.5s ease;
           text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
         }
+      }
+    }
+  }
+}
+
+/// catalog///
+
+.catalog {
+  &__h2{
+    &-wrap{
+      margin-top: 163px;
+      margin-bottom: 88px;
+    }
+    &-line{
+      width: 4px;
+      height: 71px;
+      background: #DC0000;
+    }
+    &-text{
+      font-family: FuturaBold;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 45px;
+      color: #333333;
+    }
+  }
+  &__item{
+    &-name{
+      display: flex;
+      font-family: FuturaReg;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 30px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: #333333;
+      cursor: pointer;
+      &:hover{
+        color: #DC0000;
       }
     }
   }
